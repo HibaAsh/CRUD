@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Modify User
+{% endblock %}
+
+{% block content %}
+    <h3>Modifying Page</h3>
+    <form method="post" action="" class="myForm">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" name="Submit">Modify User</button>
+    </form>
+{% endblock %}

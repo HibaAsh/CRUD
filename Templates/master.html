@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block title %}
+                Hiba's WebPage
+            {% endblock %}
+        </title>
+        <link rel="stylesheet" href="{% static 'crudstyle.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="myNavbar" style="display: block;">
+                <li><a href="{% url 'main:homePage' %}">Home</a></li>
+                <li><a href="{% url 'main:create' %}">Create</a></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <h1>My Website</h1>
+            <div class="divWrapper">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

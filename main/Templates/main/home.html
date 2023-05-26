@@ -1,0 +1,14 @@
+{% extends 'master.html' %}
+
+{% block content %}
+    <h3>Users</h3>
+    <div class="usersContainer">
+        {% for user in users %}
+            <div class="userContainer">
+                <p>{{user.fullname}}</p>
+                <a href="{% url 'main:delete' pk=user.id %}">Delete</a>
+                <a href="{% url 'main:modify' pk=user.id %}">Modify</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Delete User
+{% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete "{{user.fullname}}"?</p>
+        {{form.as_p}}
+        <input type="submit" value="Confirm">
+    </form>
+{% endblock %}
+

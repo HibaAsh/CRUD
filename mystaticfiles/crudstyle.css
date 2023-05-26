@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+.helptext{display:none;}
+ul{display:none;}
+
+body{
+    background-color: lightgray;
+    margin: 0;
+    height: 100%;
+}
+
+.myNavbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(245, 122, 122);
+}
+
+.myNavbar li{float: left;}
+
+.myNavbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.myNavbar li a:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.wrapper{
+    /* max-width: 800px; */
+    width: 100%;
+    text-align: center;
+}
+
+div.wrapper h1{
+    color: rgb(249, 106, 106);
+    text-align: center;
+    font-size: 60px;
+}
+
+.divWrapper{
+    padding: 40px;
+}
+
+div.divWrapper h3{
+    width: 50%;
+    margin: auto;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(245, 122, 122);
+    padding: 10px;
+}
+
+.myForm{
+    padding: 10px;
+}
+
+.myForm input{
+    display: block;
+    margin: 10px auto;
+    padding: 3px;
+    width: 35%;
+}
+
+.myForm button{
+    padding: 8px;
+    margin-top: 30px;
+    font-size: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(245, 122, 122);
+    width: 20%;
+}
+.usersContainer{
+    margin-top: 20px;
+}
+div.userContainer{
+    overflow: hidden;
+    width: 80%;
+    margin: 5px auto;
+    /* padding: 30px; */
+}
+div.userContainer p{
+    float: left;
+    font-size: 18px;
+}
+div.userContainer a{
+    float: right;
+    padding: 18px;
+    text-decoration: none;
+    color: black;
+}
+div.userContainer a:hover{
+    background-color: rgb(245, 122, 122);
+    color: white;
+}
+div.userContainer{
+    border-bottom: 1px solid rgb(245, 122, 122);;
+}

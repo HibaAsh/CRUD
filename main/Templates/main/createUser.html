@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Create New User
+{% endblock %}
+
+{% block content %}
+    <h3>Create User Page</h3>
+    <form method="post" action="" class="myForm">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" name="Submit">New User</button>
+    </form>
+{% endblock %}
